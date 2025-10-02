@@ -9,11 +9,9 @@ def bmi(weight, height):
 
     if bmi < 18.5:
         return "THIEU CAN"
-    elif 18.5 <= bmi < 24.9:
-        return "BÌNH THƯỜNG"
-    elif 25 <= bmi < 29.9:
+    elif 18.5 <= bmi <= 24.9:
+        return "BINH THUONG"
+    elif 25 <= bmi <= 29.9:
         return "THUA CAN"
-    elif 30 <= bmi < 39.9:
-        return "BEO PHI"
     else:
-        return "BEO PHI NANG"
+        return "BEO PHI"
