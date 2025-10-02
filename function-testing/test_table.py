@@ -10,13 +10,6 @@ bva_test_cases = [
     (80.00, 1.60, "BEO PHI"),
 ]
 
-strong_bva_test_cases = [
-    (100.00, 0.00, "LOI"),
-    (100.00, 4.01, "LOI"),
-    (0.00, 2.00, "LOI"),
-    (200.01, 2.00, "LOI")
-]
-
 @pytest.mark.parametrize("weight,height,expected", bva_test_cases)
 def test_table(weight, height, expected):
     assert bmi(weight, height) == expected

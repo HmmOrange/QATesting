@@ -1,6 +1,6 @@
 import pytest
-from code1 import bmi
-# from code2 import bmi
+# from code1 import bmi
+from code2 import bmi
 
 bva_test_cases = [
     (100.00, 0.01, "BEO PHI"),
